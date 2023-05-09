@@ -121,3 +121,27 @@ button {
 .partThree > h2 {
     text-align: right;
 }
+.partFour {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.style {
+    height: 100px;
+    margin: auto;
+    width: 80%;
+    color: white;
+    border-radius:12px;
+    background-color: rgb(58, 107, 211);
+}
+.partFive{
+    width: 100%;
+    height: 50px;
+    background-color:#252533;
+    color: white;
+    text-align: center;
+}
