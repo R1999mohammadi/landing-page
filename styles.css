@@ -2,101 +2,122 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
-header {
-    width: 100%;
-    height:50px ;
-    padding: 5px;
-   
-    background-color: #1f2937;
-    color: #E5E7EB;
-}
-
-.navMenu {
+nav ul li {
+    text-decoration: none;
     list-style-type: none;
+    color: white;
+    
+    
+
+}
+ul {
     display: flex;
-    /* gap: 20px;   */
     justify-content: flex-end;
+    gap:30px;
+    flex-wrap: nowrap;
 
 }
-.navMenu >* {
-    flex: 1;
+
+a:visited,a:link{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+li:first-child{
+    margin-right: auto;
+    vertical-align: baseline;
     
 }
-section.one {
+li:first-child >img {
+    width: 70px;
+    height: 40px;
+    border:  solid #000;
+    border-radius: 50%;
+}
+header {
+    color: white;
+    background-color: #252533;
+    height: 60px;
+    padding: 10px;
+    /* font-style: italic; */
+    font-size: 28px;
+}
+.partOne {
     width: 100%;
-    height: 300px;
-    background-color: #1f2937;
-    color:#E5E7EB
-}
-.mainContainer{
+    height:400px ;
     display: flex;
-    /* padding: px; */
-    flex-direction: row;
-    justify-content: center;
+    background-color: #252533;
+    color: white;
+    padding: 50px;
+    justify-content: space-between;
+    gap:20px;   
+}
+.image  {
     
+width: 50%;
+height: 100%;
 }
+.image > img {
+    width: 100%;
+    height: 100%;
+}
+.text {
+    text-align: center;
+    padding: 25px;
 
-.mainItems {
-    flex: 1;   
 }
-section.two {
-    widows: 100%;
-    height: 300px;
+.partTwo,.partThree{
+    background-color: #fff;
+    color: black;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    padding: 100px;
+    width: 100%;
+    height:300px;
+
+
+}
+.partTwoh1 {
     text-align: center;
 }
-.container {
+.container
+ {
     display: flex;
+    justify-self: center;
+    gap: 25px;
     width: 100%;
-    height: 200px;
-    padding: 10px;
-    justify-content: center;
-    gap: 15px;
-
+    height: 100%;
 }
 .items {
-   width: 400px;
-   height: 200px;
-    border: 2px solid blue;
-    border-radius: 10px;
-    flex: 1;
-    
-
+    width: 250px;
+    height:150px ;
+    border: 2px  solid blue;
+    flex:1;
+    border-radius: 10%;
+}
+button {
+    background:rgb(6, 6, 223);
+    color: white;
 }
 .items > img {
-    width: 100%;
-    height: 200px; 
     border: 1px solid #000;
-    border-radius: 10px;
-   
-}
+    border-radius: 5%;
 
-.three {
     width: 100%;
-    height: 300px;
-    padding: 75px;
-    background-color: #e5e7eb;
-    /* font:36px  light italic #1f2937; */
-    font-size: 32px;
-    font-style:italic;
-    overflow: hidden;
+    height: inherit;
 }
-section.four{
-    width: 100%;
-    height: 150px;
-    background-color: #3882F6;
-    color:white;
-    padding: 5px;
-text-align: center;
+.items > img:hover{
+    opacity: 0.7;
 }
-
-footer {
-    width: 100%;
-    height:50px;
-    padding: 5px;
-   
-    background-color: #1f2937;
-    color: #E5E7EB;
-    text-align: center;
+.partThree {
+    margin-top:75px ;
+    background-color: #bbb8b8;
+    height: 250px;
+}
+.partThree > h2 {
+    text-align: right;
 }
